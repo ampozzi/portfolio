@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from '../components/Layout/layout';
-import 'tachyons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => {
   return (
