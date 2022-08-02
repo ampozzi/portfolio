@@ -5,14 +5,11 @@ const Layout =({ pageTitle,children }) => {
     return(
         <div>
             <title>{pageTitle}</title>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                </ul>
+            <nav className='flex justify-end list'>
+                    <li className='pa1'><Link to="/">Home</Link></li>
+                    <li className='pa1'><Link to="/projects">Projects</Link></li>
             </nav>
             <main>
-                <h1>{pageTitle}</h1>
                 {children}
             </main>
         </div>
