@@ -1,0 +1,26 @@
+[
+    {
+        "name":"Robofriends",
+        "description": "This is project #1",
+        "source":"link to the code",
+        "live":"link to live example"
+    },
+    {
+        "name":"Face Recognition",
+        "description": "This is project #2",
+        "source":"link to the code",
+        "live":"link to live example"
+    },
+    {
+        "name":"Something else",
+        "description": "This is project #3",
+        "source":"link to the code",
+        "live":"link to live example"
+    },
+    {
+        "name":"Something something else",
+        "description": "This is project #4",
+        "source":"link to the code",
+        "live":"link to live example"
+    }
+]

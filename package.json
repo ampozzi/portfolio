@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "portfolio",
-  "author": "apozzi",
+  "author": "Axel Pozzi",
   "keywords": [
     "gatsby"
   ],
@@ -15,10 +15,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
     "gatsby": "^4.19.2",
     "react": "^18.1.0",
-    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "tachyons": "^4.12.0"
   }

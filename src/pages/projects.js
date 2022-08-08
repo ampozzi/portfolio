@@ -1,17 +1,23 @@
-import * as React from 'react'
-import Layout from '../components/Layout/layout'
+import * as React from 'react';
+import Layout from '../components/Layout/Layout';
+import ProjectCard from '../components/projects/projectCard';
+import Container from '@mui/material/Container';
+import { Typography } from '@mui/material';
+import projectData from '../assets/Projects.json';
 
 const ProjectsPage = () => {
   return (
     <Layout pageTitle="Projects">
-      <p>Here are a few projects I've been working on lately.</p>
+      <Typography variant="body1" color="text.primary">
+          Here are a few projects I've been working on lately.
+      </Typography>
       <div>
-        <ul>
-          <li>Project #1</li>
-          <li>Project #2</li>
-          <li>Project #3</li>
-          <li>Project #4</li>
-        </ul>
+      <Container maxWidth="sm" sx={{display: 'flex'}}>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </Container>
       </div>
     </Layout>
   )
