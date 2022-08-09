@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Layout from '../components/Layout/Layout';
-import ProjectCard from '../components/projects/projectCard';
+import Layout from '../components/Layout';
+import ProjectCard from '../components/projectCard';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import projectData from '../assets/Projects.json';

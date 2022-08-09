@@ -1,25 +1,34 @@
 [
     {
         "name":"Robofriends",
-        "description": "This is project #1",
-        "source":"link to the code",
-        "live":"link to live example"
+        "description": "This Web App dynamically filters Robo Friends fetched from JSON Placeholder API",
+        "bullets": [
+            "Unit Testing using Jest, Enzyme, and Snapshots",
+            "Progressive Web App",
+            "Deployed on Github Pages using CI/CD pipeline"
+        ],
+        "Tech Stack":[
+            "React","Redux","HTML5","CSS3","JavaScript"
+        ],
+        "source":"www.example.com",
+        "live":"www.example.com"
     },
     {
-        "name":"Face Recognition",
-        "description": "This is project #2",
-        "source":"link to the code",
-        "live":"link to live example"
+        "name":"Smart Brain",
+        "description": "This Web App detects Faces in a given image using Clarifai API",
+        "bullets": [
+            "User profile with CRUD operations",
+            "PAuthentication using JWT tokens"
+        ],
+        "Tech Stack":[
+            "React","Redux","HTML5","CSS3","JavaScript","Node","Express","PostgreSql"
+        ],
+        "source":"www.example.com",
+        "live":"www.example.com"
     },
     {
         "name":"Something else",
         "description": "This is project #3",
-        "source":"link to the code",
-        "live":"link to live example"
-    },
-    {
-        "name":"Something something else",
-        "description": "This is project #4",
         "source":"link to the code",
         "live":"link to live example"
     }

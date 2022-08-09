@@ -1,25 +1,14 @@
 import React from "react";
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/Layout';
 import './index.css'
-import { Typography,Container,Box } from "@mui/material";
+import { Typography,Container,Box,CardMedia } from "@mui/material";
+import HeroSection from "../components/HeroSection";
+
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-      <Container sx={{padding: '1rem'}}>
-        <Typography variant='h5'>
-          Hi there!
-        </Typography>
-        <Typography variant='h4'>
-          I'm Axel Pozzi...
-        </Typography>
-        <Typography variant='h4'>
-          About me
-        </Typography>
-        <Typography variant='body1'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum recusandae ratione. Architecto ut nesciunt hic quam est a assumenda.
-        </Typography>
-      </Container>
+      <HeroSection />
       <Container>
         <Box sx={{display: 'flex'}}>
           <Typography variant='h5' sx={{padding: '1rem'}}>
