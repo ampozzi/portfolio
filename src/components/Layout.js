@@ -8,6 +8,7 @@ import HeroSection from "./HeroSection";
 const darkTheme=createTheme({
     palette:{
       mode: 'dark'
+
     }
   })
 

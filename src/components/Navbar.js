@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link as GatsbyLink} from 'gatsby';
+import { Link } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
@@ -15,7 +16,11 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 const drawerWidth = 240;
-const navItems = ['home', 'projects', 'resume'];
+const navItems = [
+  {page:'HOME',url:'/'},
+  {page:'PROJECTS',url:'/projects'},
+  {page:'RESUME',url:'/resume'}
+];
 
 function NavBar(props) {
   const { window } = props;
@@ -28,14 +33,20 @@ function NavBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <Link to='/'>Axel Pozzi</Link>
+        <GatsbyLink to='/' style={{textDecoration:'none'}}>
+          <Link underline='none'>Axel Pozzi</Link>
+        </GatsbyLink>
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.page} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <GatsbyLink to={item.url} style={{textDecoration:'none'}}>
+                <Link underline='hover' color='primary'>
+                  <ListItemText primary={item.page} />
+                </Link>
+              </GatsbyLink>
             </ListItemButton>
           </ListItem>
         ))}
@@ -61,14 +72,20 @@ function NavBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}  
           >
-            Axel Pozzi
+          <GatsbyLink to='/' style={{textDecoration:'none'}}>
+            <Link underline='none' color='#fff'>Axel Pozzi</Link>
+          </GatsbyLink>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                <Link to={item!=='home'?`/${item}`:'/'}>{item}</Link>
+              <Button key={item.page} color='secondary'>
+                <GatsbyLink to={item.url} style={{textDecoration:'none'}}>
+                  <Link underline='hover' color='#fff'>
+                    {item.page}
+                  </Link>
+                </GatsbyLink>
               </Button>
             ))}
           </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Grid, IconButton } from '@mui/material';
+import { Grid, IconButton, Link } from '@mui/material';
 
 const socialIcons=[
     {icon: LinkedInIcon,url: 'url'},
@@ -10,12 +10,14 @@ const socialIcons=[
 
 const SocialIcons=() =>{
     return(
-        <Grid container spacing={1}>
+        <Grid container >
             {socialIcons.map((items) => (
                 <Grid item>
-                    <IconButton>
-                        <items.icon />
-                    </IconButton>
+                    <Link href={items.url}>
+                        <IconButton>
+                            <items.icon />
+                        </IconButton>
+                    </Link>
                 </Grid>
                 )
             )}
