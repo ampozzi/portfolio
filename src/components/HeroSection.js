@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import { dividerClasses } from '@mui/material';
-import { Paper, Container, Grid,Typography,Button,Box } from '@mui/material';
+import React from 'react';
+import { Paper, Container, Grid, Typography,Box } from '@mui/material';
 import SocialIcons from './SocialIcons';
 
 const HeroSection=({ children }) => {
     return(
-        <Paper sx={{height:'50vh'}}>
+        <Paper sx={{height:'40vh'}}>
             <Container 
             maxWidth='md'
             sx={{height:'100%'}}>

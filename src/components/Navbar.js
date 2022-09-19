@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import ThemeFlippingButton from './ThemeFlippingButton';
 
 const drawerWidth = 240;
 const navItems = [
@@ -39,6 +40,7 @@ function NavBar(props) {
       </Typography>
       <Divider />
       <List>
+        <ThemeFlippingButton />
         {navItems.map((item) => (
           <ListItem key={item.page} disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
@@ -79,6 +81,7 @@ function NavBar(props) {
           </GatsbyLink>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <ThemeFlippingButton />
             {navItems.map((item) => (
               <Button key={item.page} color='secondary'>
                 <GatsbyLink to={item.url} style={{textDecoration:'none'}}>
