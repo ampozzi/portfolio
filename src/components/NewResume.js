@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import { Grid, Box, Button, Container} from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
-import Resume from '../assets/Profile.pdf';
+import Resume from '../assets/Axel Pozzi - Resume.pdf';
 
 export default function Test() {
   const [numPages, setNumPages] = useState(null);
@@ -26,6 +26,7 @@ export default function Test() {
           variant="contained" 
           startIcon={<DownloadIcon />}
           href={Resume}
+          download=""
           >
             Download</Button>
           </Box>
